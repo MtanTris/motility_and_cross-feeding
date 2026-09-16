@@ -9,7 +9,7 @@ Defectors | Exploitation | `[0,0]` | `0`
 
 The competition is 
 
-![[Figure1 (2).pdf]]
+![Figure1 (2).pdf]
 
 # How to use
 ## Parameters
