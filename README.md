@@ -1,2 +1,14 @@
-# motility_and_cross-feeding
-Bacteria often exchange costly metabolites which are essential for growth with bacteria of different genotypes, through the diffusion in the medium. Here, motility is examined in a competition model between cross-feeding partners, a self-sufficient genotype which produces all compounds and an exploitative genotype.
+# Introduction to the model
+This repository stores the code for a cellular automata model aiming to assess the potential for cross-feeding in populations of motile bacteria. To this end, four bacteria genotypes are placed on a 2D lattice. Those bacteria will compete for survival until only one strain remains. Details of the strain are explained in the table below :
+
+Strain name | evolutionary strategy | Secretions | Nb on the lattice
+--|--|--|--
+Producers | Intra-genotype cooperation | `[1,1]` | `3`
+Cross-feeders | Inter-genotype cooperation (and exploitation) | `[0,1]` and `[1,0]` | `1` and `2`
+Defectors | Exploitation | `[0,0]` | `0`
+
+# How to use
+## Parameters
+## Running simulations
+## Plotting
+## Animations
