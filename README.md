@@ -10,6 +10,10 @@ Defectors | Exploitation | `[0,0]` | `0`
 For more information about the model, please read Section 2 of the report `Bacterial motility and the evolution of microbial cross-feeding.pdf`.
 
 # How to use
+## Getting started
+Two steps need to be carried out before running the code:
+1. Copy all python files in a folder.
+2. Create two folder (`data` and `animations`) in this folder. They will be used to store respectively data relative to the simulation outcomes, and animation of simulations.
 ## Parameters
 The outcome of the simulation depends on many parameters, whose meaning and default values are detailed in the table below :
 
