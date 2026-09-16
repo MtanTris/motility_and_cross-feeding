@@ -48,13 +48,16 @@ Plotting the results of the simulations can be done with `plot3.py`. The code us
 Several values can be plotted with `plot3.py`, by using a different `dtype` key in the dictionnaries. These values are described in the following table:
 `dtype` value | Data plotted
 --|--
-`0` | 
-`1` | 
-`2` | 
-`3` | 
-`4` | 
-`5` | 
-`6` | 
-`7` | 
-`8` | 
+`0` | Extinction probability of each genotype.
+`1` | Number of living cells at the generation when the second strain goes extinct, leaving only one alive.
+`2` | Generation number of the extinction event described above.
+`3` | Probability that all strains eventually go extinct.
+`4` | Probability that a given genotype is the last one standing, without considering whether it will eventually go extinct.
+`5` | Number of simulations ran for each value of the motility rate.
+`6` | Number of living cell of each genotype at each generation (requires a history file and an `exchangeRate` key in the dictionnary).
+`7` | Snapshot of the spatial structure at a given generation (requires a history file, and a `exchangeRate` and `gen` key.
+`8` | Number death by selection event for each genotype and at each generation (requires a history file and an `exchangeRate` key in the dictionnary).
+`9` | Number of successful reproduction event for each genotype and at each generation (requires a history file and an `exchangeRate` key in the dictionnary).
 ## Animations
+Animations are done by using `animations.py`, and require an history file and a log file (which can be recorded by using `SAVE_HISTORY=True` and `SAVE_LOG=True`. 
+Examples of such animations are provided in the corresponding folder.
