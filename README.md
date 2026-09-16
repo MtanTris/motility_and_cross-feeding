@@ -37,6 +37,24 @@ Variable name | Default value | Description
 `SAVE_HISTORY` | `False` | Whether to save the state of the lattice at each generation. If `SAVE_HISTORY`, only one replicate will be done per set of parameters.
 `SAVE_LOG` | `False` | Whether to record the result of each interaction and exchange that have taken place during the simulation. ⚠️ The resulting file can be very heavy.
 
+The default values of each parameter is stored inside `default_params.json`.
+
 ## Running simulations
-## Plotting
+To run simulations, run `main.py`, which will run `sim.py` for every combination of parameters.
+To set the different parameters variation, change the values of the dictionnaries `dictRows`, `dictCols` and `generalParams` in `main.py`, in the `if name == "__main__"` section. `sim.py` will then be run with each combination of parameters described `dictCols` and `dictRows`, as well as with the general parameters described by `generalParams`. Parameters whose name do not appear in any of those dictionnary will have its default value used.
+## Plotting 
+Plotting the results of the simulations can be done with `plot3.py`. The code used to plot each figure in the report has been kept there for reproduction purposes.
+
+Several values can be plotted with `plot3.py`, by using a different `dtype` key in the dictionnaries. These values are described in the following table:
+`dtype` value | Data plotted
+--|--
+`0` | 
+`1` | 
+`2` | 
+`3` | 
+`4` | 
+`5` | 
+`6` | 
+`7` | 
+`8` | 
 ## Animations
